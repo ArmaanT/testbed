@@ -34,11 +34,9 @@
     {
       "matchCurrentVersion": "< 1.0.0",
       "separateMinorPatch": true,
-      "patch": {
-        "groupName": "all non-major dependencies",
-        "groupSlug": "all-minor-patch",
-        "commitMessageExtra": null
-      },
+      "addLabels": [
+        "pre-1.0.0"
+      ],
       "minor": {
         "groupName": null,
         "groupSlug": null,
@@ -46,6 +44,10 @@
           "major"
         ],
         "schedule": "at any time"
+      },
+      "patch": {
+        "groupName": "all non-major dependencies",
+        "groupSlug": "all-minor-patch"
       }
     }
   ],
