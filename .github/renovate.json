@@ -1,6 +1,57 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>ArmaanT/testbed:renovate/master"
-  ]
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":updateNotScheduled",
+    ":automergeDisabled",
+    ":ignoreModulesAndTests",
+    ":prHourlyLimit2",
+    "group:monorepos",
+    "group:recommended",
+    "group:allNonMajor",
+    "helpers:disableTypesNodeMajor",
+    "workarounds:all",
+    "schedule:weekly"
+  ],
+  "rangeStrategy": "bump",
+  "prConcurrentLimit": 5,
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "addLabels": [
+        "major"
+      ],
+      "schedule": "at any time"
+    },
+    {
+      "matchCurrentVersion": "< 1.0.0",
+      "separateMinorPatch": true,
+      "patch": {
+        "groupName": "all non-major dependencies",
+        "groupSlug": "all-minor-patch"
+      },
+      "minor": {
+        "groupName": null,
+        "groupSlug": null,
+        "addLabels": [
+          "major"
+        ],
+        "schedule": "at any time"
+      }
+    }
+  ],
+  "github-actions": {
+    "enabled": false
+  },
+  "terraform": {
+    "enabled": false
+  }
 }
