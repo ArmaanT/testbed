@@ -38,6 +38,7 @@
         "groupName": "all non-major dependencies",
         "groupSlug": "all-minor-patch",
         "commitMessageExtra": null,
+        "commitMessageSuffix": null,
         "additionalBranchPrefix": ""
       },
       "minor": {
