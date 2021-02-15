@@ -33,30 +33,22 @@ argparse@^2.0.1:
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
-cdkactions-cli@^0.2.1:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/cdkactions-cli/-/cdkactions-cli-0.2.2.tgz#770d36ea7bf2c9b8a269bac1e639ffbb55e5d0f8"
-  integrity sha512-+3DQhIoVGaccEkw7vd7CBHMjClNu0PvzXvUUx7SW+NVSWk5Zy56Yyn/Mq72LkcQP4wB8T4qUd4qnPXtWt97/Pw==
+cdkactions-cli@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/cdkactions-cli/-/cdkactions-cli-0.2.3.tgz#2393682b37ab0b04c6964160b393e8d71b08118f"
+  integrity sha512-qYPbzuQ1M5gQGa8NRnaWwm3iXmdqMoiHR7YTh6oYROpfBGER7kwBBb6ydFlSwKK62hE0B++by43hbEBXlHvr8A==
   dependencies:
-    cdkactions "^0.2.2"
-    constructs "^3.2.80"
+    cdkactions "^0.2.3"
+    constructs "^3.2.109"
     fs-extra "^8.1.0"
     sscaff "^1.2.0"
     yaml "^1.10.0"
     yargs "^16.2.0"
 
-cdkactions@^0.2.0:
+cdkactions@^0.2.0, cdkactions@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/cdkactions/-/cdkactions-0.2.3.tgz#aa27bf720962376d54f8ef95cdfb0ab46458b966"
   integrity sha512-/DYQ2qsT6fzgZB+cmQjtPqR4aAWCqAytWbFpJK+iJLQ4jQrl6l4uMf01TLiWY3mAILS0YGlwPcoBbGvq9Jnz5g==
-  dependencies:
-    js-yaml "^4.0.0"
-    ts-dedent "^2.0.0"
-
-cdkactions@^0.2.1, cdkactions@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/cdkactions/-/cdkactions-0.2.2.tgz#ef3e134e296385fe6b9503fd54b6336ccf554263"
-  integrity sha512-Ah8WWiGGslbDTtUBBUVk03V9oz88lweeKucogNM3VfGzXvfBtXef7K7eENRI1DZB/rCti7/jXwJhzwFz/n+QgQ==
   dependencies:
     js-yaml "^4.0.0"
     ts-dedent "^2.0.0"
@@ -82,15 +74,15 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+constructs@^3.2.109, constructs@^3.3.20:
+  version "3.3.20"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.20.tgz#0bbe09c7cd86e3a834c1ecc7ee4acc69f11ff208"
+  integrity sha512-2vVjcfH5HdjYcyubr/aEZtQvm0pHz6C62FPyRZXu1tbHrsi7r4t0P490DdtApLoB0xbhYikQaneuRfSIzsIjSQ==
+
 constructs@^3.2.80:
   version "3.2.99"
   resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.2.99.tgz#bb4ddbad4598cdead4368ebae1c9d76e7e050b1d"
   integrity sha512-Ab2++N4zl+mYWIFQZaqC7Hmi1bZFD92yOjsXdmxQyGgeDIAxLJTaKhuQcdE2XNH64WETeogCtPHi+NETcyI+gw==
-
-constructs@^3.3.20:
-  version "3.3.20"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.20.tgz#0bbe09c7cd86e3a834c1ecc7ee4acc69f11ff208"
-  integrity sha512-2vVjcfH5HdjYcyubr/aEZtQvm0pHz6C62FPyRZXu1tbHrsi7r4t0P490DdtApLoB0xbhYikQaneuRfSIzsIjSQ==
 
 dedent-js@^1.0.1:
   version "1.0.1"
