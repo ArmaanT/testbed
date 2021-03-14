@@ -54,7 +54,7 @@
   ],
   "postUpgradeTasks": {
     "commands": [
-      "cd .github/cdk && yarn build && sleep 5"
+      "cd .github/cdk && yarn build && sleep 10"
     ],
     "fileFilters": [
       "cdkactions_*.yaml"
