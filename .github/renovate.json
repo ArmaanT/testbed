@@ -29,10 +29,10 @@
       ],
       "postUpgradeTasks": {
         "commands": [
-          "yarn --cwd .github/cdk build"
+          "cd .github/cdk && yarn build"
         ],
         "fileFilters": [
-          ".github/workflows/*.yaml"
+          "**/*.yaml"
         ]
       }
     },
