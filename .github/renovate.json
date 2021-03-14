@@ -50,21 +50,16 @@
         "groupName": "all non-major dependencies",
         "groupSlug": "all-minor-patch"
       }
-    },
-    {
-      "matchPackageNames": [
-        "@pennlabs/kraken"
-      ],
-      "postUpgradeTasks": {
-        "commands": [
-          "cd .github/cdk && yarn build"
-        ],
-        "fileFilters": [
-          "cdkactions_*.yaml"
-        ]
-      }
     }
   ],
+  "postUpgradeTasks": {
+    "commands": [
+      "cd .github/cdk && yarn build"
+    ],
+    "fileFilters": [
+      "cdkactions_*.yaml"
+    ]
+  },
   "github-actions": {
     "enabled": false
   },
