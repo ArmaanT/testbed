@@ -32,7 +32,7 @@
           "yarn --cwd .github/cdk build"
         ],
         "fileFilters": [
-          "**/*"
+          "*"
         ]
       }
     },
