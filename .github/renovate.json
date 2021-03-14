@@ -24,19 +24,6 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "@pennlabs/kraken"
-      ],
-      "postUpgradeTasks": {
-        "commands": [
-          "cd .github/cdk && yarn build"
-        ],
-        "fileFilters": [
-          "**/*.yaml"
-        ]
-      }
-    },
-    {
       "matchUpdateTypes": [
         "major"
       ],
@@ -62,6 +49,19 @@
       "patch": {
         "groupName": "all non-major dependencies",
         "groupSlug": "all-minor-patch"
+      }
+    },
+    {
+      "matchPackageNames": [
+        "@pennlabs/kraken"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "cd .github/cdk && yarn build"
+        ],
+        "fileFilters": [
+          "cdkactions_*.yaml"
+        ]
       }
     }
   ],
