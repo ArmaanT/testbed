@@ -57,7 +57,7 @@
       "pwd && cd .github/cdk && yarn build"
     ],
     "fileFilters": [
-      "cdkactions_.*.yaml"
+      ".github/workflows/cdkactions_*.yaml"
     ]
   },
   "github-actions": {
