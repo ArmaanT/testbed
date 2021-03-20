@@ -24,8 +24,8 @@
   ],
   "packageRules": [
     {
-      "matchFiles": [
-        ".github/cdk/package.json"
+      "matchPackageNames": [
+        "@pennlabs/kraken"
       ],
       "postUpgradeTasks": {
         "commands": [
