@@ -24,6 +24,19 @@
   ],
   "packageRules": [
     {
+      "matchFiles": [
+        ".github/cdk/package.json"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "cd .github/cdk && yarn build"
+        ],
+        "fileFilters": [
+          ".github/workflows/cdkactions_*.yaml"
+        ]
+      }
+    },
+    {
       "matchUpdateTypes": [
         "major"
       ],
@@ -52,14 +65,6 @@
       }
     }
   ],
-  "postUpgradeTasks": {
-    "commands": [
-      "cd .github/cdk && yarn build"
-    ],
-    "fileFilters": [
-      ".github/workflows/cdkactions_*.yaml"
-    ]
-  },
   "github-actions": {
     "enabled": false
   },
