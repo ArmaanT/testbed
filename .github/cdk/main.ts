@@ -24,7 +24,7 @@ export class MyStack extends Stack {
           name: 'Job',
           run: dedent`echo \$GITHUB_REF
           GIT_TAG=\${GITHUB_REF/refs\\/tags\\//}
-          echo $GITHUB_TAG
+          echo $GIT_TAG
           `
         }
       ]
