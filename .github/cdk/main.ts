@@ -25,7 +25,8 @@ export class MyStack extends Stack {
       steps: [
         {
           name: 'Job',
-          run: dedent`GIT_TAG=\${GITHUB_REF/refs\\/tags\\//}
+          run: dedent`GITHUB_REF=\${{ github.ref }}
+          GIT_TAG=\${GITHUB_REF/refs\\/tags\\//}
           LIBRARY_VERSION="0.0.0"
           if [[ "$GIT_TAG" != LIBRARY_VERSION ]]; then exit 1; fi`,
         }
