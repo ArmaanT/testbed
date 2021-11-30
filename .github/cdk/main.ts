@@ -1,4 +1,4 @@
-// import dedent from 'ts-dedent';
+import dedent from 'ts-dedent';
 import { Construct } from "constructs";
 import { App, CheckoutJob, Stack, Workflow } from "cdkactions";
 
@@ -10,17 +10,22 @@ export class MyStack extends Stack {
       name: 'Test',
       on: {
         push: {
-          branches: ['master']
+          branches: ['**'],
+          tags: ['[0-9]+.[0-9]+.[0-9]+'],
         },
         pullRequest: {}
       }
     })
     new CheckoutJob(workflow, 'job', {
       runsOn: 'ubuntu-latest',
+      if: "startsWith(github.ref, 'refs/tags')",
       steps: [
         {
           name: 'Job',
-          run: 'echo "Hello!"'
+          run: dedent`echo \$GITHUB_REF
+          GIT_TAG=\${GITHUB_REF/refs\\/tags\\//}
+          echo $GITHUB_TAG
+          `
         }
       ]
     })
