@@ -12,6 +12,8 @@ jobs:
   job:
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags')
+    container:
+      image: python:3.8
     steps:
       - uses: actions/checkout@v2
       - name: Job

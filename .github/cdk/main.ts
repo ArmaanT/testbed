@@ -19,6 +19,9 @@ export class MyStack extends Stack {
     new CheckoutJob(workflow, 'job', {
       runsOn: 'ubuntu-latest',
       if: "startsWith(github.ref, 'refs/tags')",
+      container: {
+        image: `python:3.8`,
+      },
       steps: [
         {
           name: 'Job',
