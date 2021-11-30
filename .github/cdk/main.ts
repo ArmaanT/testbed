@@ -29,7 +29,7 @@ export class MyStack extends Stack {
           run: dedent`GITHUB_REF=\${{ github.ref }}
           GIT_TAG=\${GITHUB_REF/refs\\/tags\\//}
           LIBRARY_VERSION="0.0.12"
-          if [[ "$GIT_TAG" != LIBRARY_VERSION ]]; then exit 1; fi`,
+          if [[ "$GIT_TAG" != "$LIBRARY_VERSION" ]]; then exit 1; fi`,
         }
       ]
     })
