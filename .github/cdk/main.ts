@@ -28,7 +28,7 @@ export class MyStack extends Stack {
           shell: "bash",
           run: dedent`GIT_TAG=\${GITHUB_REF/refs\\/tags\\//}
           LIBRARY_VERSION="0.0.16"
-          if [[ "$GIT_TAG" != "$LIBRARY_VERSION" ]]; then exit 1; fi`,
+          if [[ "$GIT_TAG" != "$LIBRARY_VERSION" ]]; then echo "Tag does not match poetry version"; exit 1; fi`,
         }
       ]
     })
