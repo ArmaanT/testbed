@@ -25,6 +25,7 @@ export class MyStack extends Stack {
       steps: [
         {
           name: 'Job',
+          shell: "bash",
           run: dedent`GITHUB_REF=\${{ github.ref }}
           echo $GITHUB_REF
           GIT_TAG=\${GITHUB_REF/refs\\/tags\\//}

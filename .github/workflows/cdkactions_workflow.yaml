@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Job
+        shell: bash
         run: |-
           GITHUB_REF=${{ github.ref }}
           echo $GITHUB_REF
