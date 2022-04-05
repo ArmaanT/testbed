@@ -19,6 +19,6 @@ jobs:
       - name: Publish to npm
         run: |-
           echo "publishing new version"
-        if: github.ref == 'refs/heads/main' && steps.version_check.outputs.NEW_VERSION
+        if: github.ref == 'refs/heads/main' && steps.version_check.outputs.NEW_VERSION == 'true'
     container:
       image: node:14
