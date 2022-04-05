@@ -1,8 +1,5 @@
 name: Publish kraken
-on:
-  push:
-    paths:
-      - cdk/kraken/**
+on: push
 jobs:
   publish:
     runs-on: ubuntu-latest

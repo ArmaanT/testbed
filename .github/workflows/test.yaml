@@ -1,9 +1,0 @@
-name: Do something
-jobs:
-  validate:
-    name: Validate cdkactions manifests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Validate manifests
-        run: |-
-          echo something
