@@ -72,6 +72,6 @@
   },
   "terraform": {
     "enabled": false
-  },
-  "includePaths": [".github/cdk", "k8s"]
+  }
+  // "includePaths": [".github/cdk", "k8s"]
 }
