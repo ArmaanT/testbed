@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default preset for Penn Labs repositories",
   "extends": [
     "github>whitesource/merge-confidence:beta",
     ":separateMajorReleases",
@@ -19,13 +20,14 @@
   ],
   "rangeStrategy": "bump",
   "prConcurrentLimit": 5,
+  "rebaseWhen": "behind-base-branch",
   "labels": [
     "dependencies"
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "@pennlabs/kraken"
+      "matchFiles": [
+        ".github/cdk/package.json"
       ],
       "postUpgradeTasks": {
         "commands": [
@@ -70,5 +72,6 @@
   },
   "terraform": {
     "enabled": false
-  }
+  },
+  "includePaths": [".github/cdk", "k8s"]
 }
