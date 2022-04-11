@@ -11,10 +11,10 @@
     constructs "^3.2.80"
     dedent-js "^1.0.1"
 
-"@types/node@^16.11.11":
-  version "16.11.11"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
-  integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
+"@types/node@^16.11.26":
+  version "16.11.26"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.26.tgz#63d204d136c9916fb4dcd1b50f9740fe86884e47"
+  integrity sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==
 
 ansi-regex@^5.0.1:
   version "5.0.1"
@@ -74,10 +74,15 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-constructs@^3.2.109, constructs@^3.2.80, constructs@^3.3.161:
+constructs@^3.2.109, constructs@^3.2.80:
   version "3.3.161"
   resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.161.tgz#9726b1d450f3b9aca7907230f2248e3fd4058ce4"
   integrity sha512-/27vW3fo0iyb3py4vKI1BduEYmv8vv8uJgLXvI+5F0Jbnn0/E+As2wkGMa7bumhzCd0Ckv/USkAXstGYVXTYQA==
+
+constructs@^3.3.264:
+  version "3.3.264"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.264.tgz#79b6db675f04727555b166ac2d4aa70bc6e103aa"
+  integrity sha512-tn1Ygr10EgzQHV3cPc6cjT4YWMqm4/iMDfBNPnKlRWmHP5JyIWhSwj634qrikXxzEXoMO6j5926Z3s7V4FANCA==
 
 dedent-js@^1.0.1:
   version "1.0.1"
@@ -163,10 +168,10 @@ ts-dedent@^2.0.0:
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
 
-typescript@^4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
-  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
+typescript@^4.6.3:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
+  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
 
 universalify@^0.1.0:
   version "0.1.2"
