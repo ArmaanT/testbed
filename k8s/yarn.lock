@@ -1079,6 +1079,11 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
+constructs@^10.0.111:
+  version "10.0.111"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.111.tgz#9b45e51b2f450c71d900b0a6012c7b30e2018874"
+  integrity sha512-q1rqmz6ECUBjuWMPjjJsZSnieZfQr+oRSJHyF4dFlYjKHJKF86RgIM5T0ZEX4VEfmkoXwfILYM39aUWgIlpwDg==
+
 constructs@^3.3.161, constructs@^3.3.263:
   version "3.3.263"
   resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.263.tgz#d1c0391155d28e34534d2ab4266199f260258ba6"
